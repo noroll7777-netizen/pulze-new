@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULZE Components Structure</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f11;
+            color: #c6dada;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #151719;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #7cc8c6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #00ff9d;
+            border-bottom: 1px solid #2a2f31;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .folder {
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 1px solid #2a2f31;
+        }
+        .folder-name {
+            color: #00b7ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .file {
+            margin-left: 15px;
+            margin-bottom: 5px;
+        }
+        .file-name {
+            color: #c6dada;
+        }
+        .file-desc {
+            color: #888;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+        .note {
+            background-color: #1d1f21;
+            padding: 10px;
+            border-left: 4px solid #00ff9d;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PULZE Components Structure</h1>
+        
+        <div class="note">
+            This is a reorganized structure of the PULZE project, separating the installer and launcher components into dedicated folders.
+        </div>
+        
+        <h2>Folder Structure</h2>
+        
+        <div class="folder">
+            <div class="folder-name">PULZE_Components/</div>
+            
+            <div class="folder">
+                <div class="folder-name">Common/</div>
+                <div class="file">
+                    <span class="file-name">auth_client.py</span>
+                    <span class="file-desc">- KeyAuth authentication client</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">keyauth.py</span>
+                    <span class="file-desc">- KeyAuth API implementation</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">config.py</span>
+                    <span class="file-desc">- Configuration settings</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">icon.ico</span>
+                    <span class="file-desc">- Application icon</span>
+                </div>
+            </div>
+            
+            <div class="folder">
+                <div class="folder-name">Installer/</div>
+                <div class="file">
+                    <span class="file-name">installer.py</span>
+                    <span class="file-desc">- Main installer application</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">installer.spec</span>
+                    <span class="file-desc">- PyInstaller specification file</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">boot_manager.py</span>
+                    <span class="file-desc">- Boot configuration manager</span>
+                </div>
+            </div>
+            
+            <div class="folder">
+                <div class="folder-name">Launcher/</div>
+                <div class="file">
+                    <span class="file-name">launcher.py</span>
+                    <span class="file-desc">- Main launcher application</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">launcher.spec</span>
+                    <span class="file-desc">- PyInstaller specification file</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">launcher_config.json</span>
+                    <span class="file-desc">- Launcher configuration</span>
+                </div>
+                <div class="file">
+                    <span class="file-name">tweaker.py</span>
+                    <span class="file-desc">- System optimization engine</span>
+                </div>
+            </div>
+            
+            <div class="file">
+                <span class="file-name">README.md</span>
+                <span class="file-desc">- Project documentation</span>
+            </div>
+            <div class="file">
+                <span class="file-name">update_imports.py</span>
+                <span class="file-desc">- Script to update import paths</span>
+            </div>
+        </div>
+        
+        <h2>Component Descriptions</h2>
+        
+        <h3>Installer</h3>
+        <p>
+            The Installer components are responsible for deploying PULZE OS on the user's computer. 
+            The main features include GUI interface with CustomTkinter, KeyAuth authentication, 
+            WIM file download and validation, disk partitioning with Diskpart, image application with DISM, 
+            and boot configuration with BCD.
+        </p>
+        
+        <h3>Launcher</h3>
+        <p>
+            The Launcher components replace the standard Windows Explorer shell and provide a custom interface for PULZE OS. 
+            Key features include full-screen Tkinter interface with Cyberpunk style, game/application launching, 
+            system optimization tweaks, global crosshair overlay, RAM cleaner, and system information display.
+        </p>
+        
+        <h3>Common</h3>
+        <p>
+            The Common folder contains shared components used by both the Installer and Launcher, 
+            including authentication modules, configuration settings, and visual assets.
+        </p>
+    </div>
+</body>
+</html>

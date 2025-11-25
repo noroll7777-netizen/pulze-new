@@ -1,0 +1,24 @@
+{
+    "FirstRun": false,
+    "GlobalHz": 60,
+    "CurrentW": 1920,
+    "CurrentH": 1080,
+    "LastW": 1920,
+    "LastH": 1080,
+    "Paths": {
+        "Rust": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Rust\\RustClient.exe",
+        "Steam": "C:\\Program Files (x86)\\Steam\\steam.exe",
+        "Ripcord": "C:\\PULZE\\Apps\\Ripcord\\Ripcord.exe",
+        "Discord": "C:\\Users\\roll\\AppData\\Local\\Discord\\Update.exe",
+        "Thorium": "C:\\PULZE\\Apps\\Thorium\\BIN\\thorium.exe",
+        "OBS": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe",
+        "FileMan": "C:\\PULZE\\Tools\\explorerpp_x64\\Explorer++.exe"
+    },
+    "Crosshair": {
+        "Enabled": true,
+        "Type": "plus",
+        "Size": 6,
+        "Hotkey": "x",
+        "Color": "#ff0000"
+    }
+}
